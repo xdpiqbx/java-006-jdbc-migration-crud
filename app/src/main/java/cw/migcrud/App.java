@@ -14,7 +14,7 @@ public class App {
     public static void main(String[] args) throws SQLException {
 
         Storage storage = Storage.getInstance();
-        new DatabaseInitService().initDb(storage);
+//        new DatabaseInitService().initDb(storage);
         HumanServiceV2 humanServiceV2 = new HumanServiceV2(storage);
 //
         int count = 100000;

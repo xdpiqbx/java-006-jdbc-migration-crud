@@ -22,3 +22,8 @@ public class DatabaseInitService {
     }
 }
 ```
+
+---
+
+DAO - Data Access Object
+DTO - Data Transfer Object

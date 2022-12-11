@@ -8,8 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class DatabaseInitService {
-    public void initDb(Storage storage){
-        String connectionUrl = new Prefs().getString(Prefs.DB_URL);
+    public static void initDb(String connectionUrl){
         // Create the Flyway instance and point it to the database
         Flyway flyway = Flyway
                 .configure()

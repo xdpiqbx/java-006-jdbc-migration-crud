@@ -1,3 +1,5 @@
+.idea
+test.mv.db
 # Ignore Gradle project-specific cache directory
 .gradle
 
