@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class HumanDaoService {
 // @RequiredArgsConstructor
@@ -26,7 +25,7 @@ public class HumanDaoService {
 
     public HumanDaoService(Connection connection) throws SQLException {
         this.createSt = connection.prepareStatement(
-                "INSERT INTO human (name, birthday, gender) VALUES (?, ?, ?)"
+            "INSERT INTO human (name, birthday, gender) VALUES (?, ?, ?)"
         );
         this.getByIdSt = connection.prepareStatement(
             "SELECT name, birthday, gender FROM human WHERE id = ?"
